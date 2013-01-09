@@ -1,0 +1,63 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/menu_background" >
+
+    <ImageView
+        android:id="@+id/exit_button"
+        android:layout_width="280dp"
+        android:layout_height="60dp"
+        android:layout_alignLeft="@+id/about_button"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="18dp"
+        android:onClick="onExitClick"
+        android:scaleType="fitXY"
+        android:src="@drawable/exit_button_custom" />
+
+    <ImageView
+        android:id="@+id/help_button"
+        android:layout_width="280dp"
+        android:layout_height="60dp"
+        android:layout_above="@+id/about_button"
+        android:layout_alignLeft="@+id/options_button"
+        android:layout_marginBottom="17dp"
+        android:onClick="onHelpClick"
+        android:scaleType="fitXY"
+        android:src="@drawable/help_button_custom" />
+
+    <ImageView
+        android:id="@+id/about_button"
+        android:layout_width="280dp"
+        android:layout_height="60dp"
+        android:layout_above="@+id/exit_button"
+        android:layout_alignLeft="@+id/help_button"
+        android:layout_marginBottom="16dp"
+        android:onClick="onAboutClick"
+        android:scaleType="fitXY"
+        android:src="@drawable/about_button_custom" />
+
+    <ImageView
+        android:id="@+id/options_button"
+        android:layout_width="280dp"
+        android:layout_height="60dp"
+        android:layout_above="@+id/help_button"
+        android:layout_alignLeft="@+id/start_button"
+        android:layout_marginBottom="18dp"
+        android:onClick="onHighscoresClick"
+        android:scaleType="fitXY"
+        android:src="@drawable/highscore_button_custom" />
+
+    <ImageView
+        android:id="@+id/start_button"
+        android:layout_width="280dp"
+        android:layout_height="60dp"
+        android:layout_above="@+id/options_button"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="15dp"
+        android:onClick="onStartClick"
+        android:padding="0dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/start_button_custom" />
+
+</RelativeLayout>

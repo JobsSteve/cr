@@ -1,0 +1,107 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/common_background"
+    tools:context=".UserDetailsActivity" >
+
+    <TextView
+        android:id="@+id/headerTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/nameTextField"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="26dp"
+        android:text="Header Text"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <Button
+        android:id="@+id/userdetails_submitButton"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_above="@+id/cancelButton"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/submit_score_butotn"
+        android:onClick="onSubmitClick" />
+
+    <Button
+        android:id="@+id/cancelButton"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/cancel_button"
+        android:onClick="onCancelButtonClick" />
+
+    <EditText
+        android:id="@+id/phoneNoTextField"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_above="@+id/userdetails_submitButton"
+        android:layout_alignLeft="@+id/emailTextField"
+        android:layout_alignRight="@+id/emailTextField"
+        android:layout_marginBottom="14dp"
+        android:ems="10"
+        android:inputType="number|phone" />
+
+    <EditText
+        android:id="@+id/emailTextField"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_above="@+id/phoneNoTextField"
+        android:layout_alignLeft="@+id/nameTextField"
+        android:layout_alignRight="@+id/nameTextField"
+        android:layout_marginBottom="16dp"
+        android:ems="10"
+        android:inputType="textEmailAddress" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/nameTextField"
+        android:layout_alignBottom="@+id/nameTextField"
+        android:layout_alignParentLeft="true"
+        android:text="Name/Twitter:"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/TextView01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/emailTextField"
+        android:layout_alignBottom="@+id/emailTextField"
+        android:layout_alignLeft="@+id/textView1"
+        android:text="Email:"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/TextView02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/phoneNoTextField"
+        android:layout_alignBottom="@+id/phoneNoTextField"
+        android:layout_alignParentLeft="true"
+        android:text="Phone No:"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <ImageView
+        android:id="@+id/position_imageView"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignBottom="@+id/headerTextView"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/position_1" />
+
+    <EditText
+        android:id="@+id/nameTextField"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_above="@+id/emailTextField"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="17dp"
+        android:ems="10" />
+
+</RelativeLayout>

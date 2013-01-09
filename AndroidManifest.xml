@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.gts.cr.main"
+    android:versionCode="5"
+    android:versionName="1.4" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="15" />
+
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.Black" >
+        <activity
+            android:name="com.gts.cr.main.MainGameActivity"
+            android:label="@string/title_activity_main_game"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.gts.cr.main.MenuScreenActivity"
+            android:label="@string/title_activity_menu_screen"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.gts.cr.main.SplashScreenActivity"
+            android:label="@string/title_activity_menu_screen"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.gts.cr.main.GetNameActivity"
+            android:label="@string/title_activity_main_game"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.gts.cr.main.CarSelectActivity"
+            android:label="@string/title_activity_main_game"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.gts.cr.main.UserDetailsActivity"
+            android:label="@string/title_activity_main_game"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.gts.cr.main.HelpActivity"
+            android:label="@string/title_activity_main_game"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.gts.cr.main.AboutActivity"
+            android:label="@string/title_activity_main_game"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.gts.cr.main.StrategicSplashActivity"
+            android:label="@string/title_activity_main_game"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.gts.cr.main.AdvertiseSplashActivity"
+            android:label="@string/title_activity_main_game"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.gts.cr.main.HighscoresActivity"
+            android:label="@string/title_activity_highscores" >
+        </activity>
+        <activity
+            android:name="com.gts.cr.main.BestTimesTabActivity"
+            android:label="@string/title_activity_best_times_tab"
+            android:parentActivityName="android.app.TabActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="android.app.TabActivity" />
+        </activity>
+        <activity
+            android:name="com.gts.cr.main.AstonMartinBestTimesActivity"
+            android:label="@string/title_activity_aston_martin_best_times" >
+        </activity>
+        <activity
+            android:name="com.gts.cr.main.BeetleBestTimesActivity"
+            android:label="@string/title_activity_beetle_best_times" >
+        </activity>
+        <activity
+            android:name="com.gts.cr.main.KnightRiderBestTimesActivity"
+            android:label="@string/title_activity_knight_rider_best_times" >
+        </activity>
+        <activity
+            android:name="com.gts.cr.main.PorscheBestTimesActivity"
+            android:label="@string/title_activity_porsche_best_times" >
+        </activity>
+        <activity
+            android:name="com.gts.cr.main.PoloBestTimesActivity"
+            android:label="@string/title_activity_polo_best_times" >
+        </activity>
+    </application>
+
+</manifest>

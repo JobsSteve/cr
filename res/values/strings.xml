@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Colombo Racer</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_main_game">Colombo Racer</string>
+    <string name="title_activity_menu_screen">Colombo Racer</string>
+    <string name="title_activity_highscores">Colombo Racer Best Times</string>
+    <string name="name_label">Name</string>
+    <string name="time_label">Time</string>
+    <string name="title_activity_best_times_tab">Best Times</string>
+    <string name="title_activity_aston_martin_best_times">Aston Martin Best Times</string>
+    <string name="title_activity_beetle_best_times">VW Beetle Best Times</string>
+    <string name="title_activity_knight_rider_best_times">Knight Rider Best Times</string>
+    <string name="title_activity_porsche_best_times">Porsche Best Times</string>
+    <string name="title_activity_polo_best_times">VW Polo Best Times</string>
+
+</resources>
